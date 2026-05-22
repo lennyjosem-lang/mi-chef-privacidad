@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Política de Privacidad — Mi Chef Personal</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F9F7F4; color: #2C1F14; line-height: 1.7; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem; }
+  .header { text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(92,64,51,0.15); }
+  .app-name { font-size: 13px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: #9C7B6A; margin-bottom: 10px; }
+  h1 { font-size: 2rem; font-weight: 700; color: #2C1F14; margin-bottom: 8px; }
+  .meta { font-size: 13px; color: #9C7B6A; }
+  h2 { font-size: 1.1rem; font-weight: 600; color: #2C1F14; margin: 2rem 0 0.75rem; padding-left: 12px; border-left: 3px solid #C0522A; }
+  p { font-size: 14px; color: #5C4033; margin-bottom: 1rem; }
+  ul { margin: 0 0 1rem 1.5rem; }
+  li { font-size: 14px; color: #5C4033; margin-bottom: 6px; }
+  .highlight { background: #F5EDD4; border: 1px solid rgba(200,154,46,0.3); border-radius: 10px; padding: 14px 16px; margin: 1rem 0; font-size: 13px; color: #5C4033; }
+  .contact { background: #FFFDF8; border: 1px solid rgba(92,64,51,0.12); border-radius: 12px; padding: 1.5rem; margin-top: 2rem; }
+  .contact h2 { border-left: none; padding-left: 0; margin-top: 0; }
+  footer { text-align: center; margin-top: 3rem; font-size: 12px; color: #9C7B6A; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="app-name">Mi Chef Personal</div>
+    <h1>Política de Privacidad</h1>
+    <div class="meta">Última actualización: Mayo 2025 · Versión 1.0</div>
+  </div>
+
+  <div class="highlight">
+    📋 <strong>Resumen:</strong> Mi Chef Personal no recopila ni almacena datos personales en servidores externos. Todo tu perfil, despensa e historial se guarda únicamente en tu dispositivo.
+  </div>
+
+  <h2>1. Información que recopilamos</h2>
+  <p>Mi Chef Personal recopila únicamente la información que tú ingresas voluntariamente dentro de la app:</p>
+  <ul>
+    <li><strong>Perfil personal:</strong> nombre, edad, sexo, peso, estatura y foto de perfil</li>
+    <li><strong>Preferencias alimentarias:</strong> alergias, restricciones y objetivo nutricional</li>
+    <li><strong>Despensa:</strong> lista de ingredientes que agregas manualmente o mediante escaneo de factura</li>
+    <li><strong>Historial de recetas:</strong> registro de recetas que marcas como realizadas</li>
+  </ul>
+
+  <h2>2. Cómo usamos tu información</h2>
+  <p>La información de tu perfil y despensa se utiliza exclusivamente para:</p>
+  <ul>
+    <li>Personalizar las recetas generadas según tu objetivo nutricional, alergias y restricciones</li>
+    <li>Calcular tu IMC y tasa metabólica basal (TMB) para ajustar las calorías recomendadas</li>
+    <li>Mostrar qué ingredientes de tu despensa se usan en cada receta</li>
+    <li>Mantener el historial de recetas realizadas</li>
+  </ul>
+
+  <h2>3. Almacenamiento de datos</h2>
+  <p>Todos tus datos se almacenan <strong>localmente en tu dispositivo</strong> usando el almacenamiento del navegador (localStorage). No transmitimos ni guardamos tu perfil en ningún servidor externo.</p>
+  <p>Al desinstalar la aplicación, todos tus datos locales se eliminan permanentemente.</p>
+
+  <h2>4. Inteligencia Artificial (Claude API)</h2>
+  <p>Mi Chef Personal utiliza la API de Claude (Anthropic) para generar recetas personalizadas y analizar imágenes de facturas. Cuando generas una receta o escaneas una factura, se envía la siguiente información a los servidores de Anthropic:</p>
+  <ul>
+    <li>Tus preferencias de receta (objetivo, cocina, tiempo, personas)</li>
+    <li>La lista de ingredientes de tu despensa</li>
+    <li>Datos de perfil relevantes (edad, sexo, peso, estatura, alergias) — sin nombre ni foto</li>
+    <li>La imagen de la factura (únicamente cuando usas la función de escaneo)</li>
+  </ul>
+  <p>Esta información se procesa para generar la respuesta y no es utilizada por Anthropic para entrenar sus modelos. Puedes consultar la política de privacidad de Anthropic en <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a>.</p>
+
+  <h2>5. Permisos de la aplicación</h2>
+  <p>Mi Chef Personal solicita los siguientes permisos en Android:</p>
+  <ul>
+    <li><strong>Internet:</strong> necesario para conectarse a la API de Claude y generar recetas</li>
+    <li><strong>Cámara:</strong> opcional, para fotografiar facturas del supermercado directamente</li>
+    <li><strong>Almacenamiento / Imágenes:</strong> opcional, para seleccionar fotos de facturas de tu galería</li>
+  </ul>
+
+  <h2>6. Datos de menores</h2>
+  <p>Mi Chef Personal no está dirigida a menores de 13 años. No recopilamos intencionalmente información personal de menores. Si eres padre o tutor y crees que tu hijo ha proporcionado datos personales, contáctanos para eliminarlos.</p>
+
+  <h2>7. Seguridad</h2>
+  <p>Implementamos medidas técnicas para proteger tu información:</p>
+  <ul>
+    <li>Las comunicaciones con la API de Claude se realizan a través de un servidor proxy seguro (HTTPS)</li>
+    <li>Tu API Key nunca está expuesta en el código de la aplicación</li>
+    <li>No almacenamos contraseñas ni información financiera</li>
+  </ul>
+
+  <h2>8. Cambios a esta política</h2>
+  <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Te notificaremos sobre cambios significativos mediante una actualización en la app. Te recomendamos revisar esta política periódicamente.</p>
+
+  <h2>9. Tus derechos</h2>
+  <p>Tienes derecho a:</p>
+  <ul>
+    <li><strong>Acceder</strong> a tus datos — están disponibles directamente en la app</li>
+    <li><strong>Eliminar</strong> tus datos — desinstalando la app o limpiando el almacenamiento de la app en Ajustes de Android</li>
+    <li><strong>Portabilidad</strong> — puedes exportar tu información manualmente desde la app</li>
+  </ul>
+
+  <div class="contact">
+    <h2>10. Contacto</h2>
+    <p>Si tienes preguntas sobre esta Política de Privacidad o sobre cómo manejamos tu información, puedes contactarnos en:</p>
+    <p><strong>Email:</strong> privacidad@michefpersonal.app<br/>
+    <strong>App:</strong> Mi Chef Personal<br/>
+    <strong>Versión de la política:</strong> 1.0 — Mayo 2025</p>
+  </div>
+
+  <footer>
+    © 2025 Mi Chef Personal · Todos los derechos reservados<br/>
+    Esta política aplica a la aplicación Mi Chef Personal en Android.
+  </footer>
+</div>
+</body>
+</html>
